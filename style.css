@@ -25,31 +25,30 @@ padding: 20px;
 
 
 .card {
-background: rgba(255,255,255,0.1);
-padding: 30px;
-border-radius: 20px;
-text-decoration: none;
-color: white;
-transition: transform 0.3s;
-}
-
-
-.card:hover {
-transform: translateY(-10px);
-}
-
-.img-suave {
-  width: 320px;
-  height: 200px;
-  object-fit: cover;
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
   border-radius: 20px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* 🔑 evita cortes raros */
+  transition: transform 0.3s;
 }
 
-.img-suave:hover {
-  transform: scale(1.03);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+
+
+.card:hover .img-suave {
+  transform: scale(1.05);
+}
+
+
+img-suave {
+  width: 100%;          /* se adapta a la card */
+  height: 160px;        /* tamaño controlado */
+  object-fit: contain;  /* NO recorta logos */
+  border-radius: 16px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
 }
 
 
