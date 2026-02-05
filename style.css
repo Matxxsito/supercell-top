@@ -42,7 +42,23 @@ padding: 20px;
 }
 
 
-img-suave {
+img-clans {
+  width: 100%;          /* se adapta a la card */
+  height: 160px;        /* tamaño controlado */
+  object-fit: contain;  /* NO recorta logos */
+  border-radius: 16px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+img-clash {
+  width: 100%;          /* se adapta a la card */
+  height: 160px;        /* tamaño controlado */
+  object-fit: contain;  /* NO recorta logos */
+  border-radius: 16px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+img-brawl {
   width: 100%;          /* se adapta a la card */
   height: 160px;        /* tamaño controlado */
   object-fit: contain;  /* NO recorta logos */
@@ -51,6 +67,7 @@ img-suave {
   transition: transform 0.3s ease;
 }
 
+  
 
   
 .content {
